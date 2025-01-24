@@ -1,0 +1,141 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* To ensure the video covers the entire screen */
+  position: relative;
+}
+
+/* Video Background */
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire viewport */
+  z-index: -1; /* Place the video behind the content */
+}
+
+/* Container Styling */
+.container {
+  background: white; /* Keep white background for the main container */
+  padding: 60px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  z-index: 1; /* Make sure the content is above the video */
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4A00E0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Group */
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="date"]:focus {
+  border-color: #4A00E0;
+  box-shadow: 0 0 5px #8E2DE2;
+  outline: none;
+}
+
+/* Lightning Button */
+.lightning-button {
+  background: linear-gradient(135deg, #4A00E0, #8E2DE2);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.lightning-button:hover {
+  background: linear-gradient(135deg, #8E2DE2, #4A00E0);
+  box-shadow: 0 0 15px #8E2DE2;
+}
+
+.lightning-button:active::after {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: rgba(255, 255, 255, 0.5);
+  animation: lightningFlash 0.3s ease;
+}
+
+@keyframes lightningFlash {
+  0% { transform: scale(0); opacity: 1; }
+  100% { transform: scale(1); opacity: 0; }
+}
+
+/* Result Section */
+#result {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#result img {
+  max-width: 150px;
+  margin-top: 10px;
+}
+
+/* Recent Searches */
+#lastSearches {
+  margin-top: 30px;
+  text-align: left;
+}
+
+#lastSearches h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#searchHistory {
+  list-style: none;
+  padding: 0;
+}
+
+#searchHistory li {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

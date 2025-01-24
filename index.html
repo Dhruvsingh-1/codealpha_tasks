@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Video -->
+  <video autoplay loop muted id="background-video">
+    <source src="https://cdn.pixabay.com/video/2021/10/17/92332-636709329_large.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="container">
+    <h3>Task 1 @codealpha</h3>
+    <h1>🎉 Animated Age Calculator 🎂</h1>
+    <div class="form-container">
+      <form id="ageCalculatorForm">
+        <div class="input-group">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" required>
+        </div>
+        <button type="submit" class="lightning-button">⚡ Calculate Age ⚡</button>
+      </form>
+    </div>
+    <div id="result"></div>
+    <div id="lastSearches">
+      <h2>Recent Searches</h2>
+      <ul id="searchHistory"></ul>
+    </div>
+    <h3>Created by Dhruv Singh</h3>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
