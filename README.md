@@ -6,7 +6,7 @@ This project is an animated age calculator with a visually appealing design and 
 
 ## 🔗 Task Details
 - **Task Name:** Task 1 - Animated Age Calculator
-- **Task Link:** [Animated Age Calculator](https://dhruvsingh-1.github.io/CodeAlpha_Task/)
+- **Task Link:** [Animated Age Calculator](https://dhruvsingh-1.github.io/codealpha_tasks/)
 
 ## 🛠️ Technologies Used
 - **HTML:** For structuring the web page.
